@@ -62,4 +62,4 @@ pids/
 *.sqlite
 *.sqlite3
 
-codebuildspec.yaml
+*.sh
