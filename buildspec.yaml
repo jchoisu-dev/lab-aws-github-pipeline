@@ -5,7 +5,7 @@ env:
   variables:
     AWS_DEFAULT_REGION: us-east-1
     AWS_ACCOUNT_ID: "365207643205"
-    IMAGE_REPO_NAME: "lab"
+    IMAGE_REPO_NAME: "aws-lab-ecr/nginx-lab"
 
 phases:
   pre_build:
