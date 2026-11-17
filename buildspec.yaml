@@ -31,7 +31,7 @@ phases:
       - echo "Pushing Docker image..."
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo "Creating ECS image definitions..."
-      - printf '[{"name":"lab","imageUri":"%s"}]' "$REPOSITORY_URI:$IMAGE_TAG" > imagedefinitions.json
+      - printf '[{"name":"aws-ecs-cluster-lab","imageUri":"%s"}]' "$REPOSITORY_URI:$IMAGE_TAG" > imagedefinitions.json
       - ls -l imagedefinitions.json
 
 artifacts:
