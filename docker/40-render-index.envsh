@@ -1,0 +1,5 @@
+#!/bin/sh
+# Fill in ${APP_ENV} in the page at container start (set per ECS task definition)
+: "${APP_ENV:=local}"
+export APP_ENV
+envsubst '${APP_ENV}' < /usr/share/nginx/html/index.html.template > /usr/share/nginx/html/index.html
